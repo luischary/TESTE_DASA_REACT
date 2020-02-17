@@ -1,17 +1,17 @@
 import React from 'react'
 import Cabecalho from './Cabecalho'
+import ColorPalette from './ColorPalette'
 
 const TesteDasa = (props) => (
     <React.Fragment>
         <Cabecalho />
 
+        < ColorPalette >
+
+        </ColorPalette >
         
     </React.Fragment>
 )
-
-    // < ColorPallete >
-    // <ColorPalleteItem />
-    //     </ColorPallete >
 
     // <TextStyleCatalog>
     //     <TextStyleItem />

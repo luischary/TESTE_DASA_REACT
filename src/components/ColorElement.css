@@ -1,0 +1,73 @@
+.color-sun-yellow {
+    background-color: #F9d423;
+}
+
+.color-greyish-brown {
+    background-color: #444444;
+}
+
+.color-black-0 {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: linear-gradient(45deg, #dddadc 25%, transparent 25%, transparent 75%, #dddadc 75%, #dddadc), linear-gradient(45deg, #dddadc 25%, transparent 25%, transparent 75%, #dddadc 75%, #dddadc);
+    background-size: 12px 12px;
+    background-position: 0 0, 6px 6px;
+}
+
+.color-black-60 {
+    background-color: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(45deg, #dddadc 25%, transparent 25%, transparent 75%, #dddadc 75%, #dddadc), linear-gradient(45deg, #dddadc 25%, transparent 25%, transparent 75%, #dddadc 75%, #dddadc);
+    background-size: 12px 12px;
+    background-position: 0 0, 6px 6px;
+}
+
+.color-very-light-pink-two {
+    background-color: #cccccc;
+}
+
+.color-brown-grey {
+    background-color: #999999;
+}
+
+.color-cornflower {
+    background-color: #667df3;
+}
+
+.color-yellowish-orange {
+    background-color: #ffa710;
+}
+
+.color-aqua {
+    background-color: #19d4ca;
+}
+
+.color-brownish-grey {
+    background-color: #666666;
+}
+
+.color-very-light-pink-three {
+    background-color: #d8d8d8;
+}
+
+.color-very-light-pink-four {
+    background-color: #e3e3e3;
+}
+
+.color-very-light-pink {
+    background-color: #f7f3f2;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.color-black {
+    background-color: #000000;
+}
+
+.color-light-red {
+    background-color: #ff4e50;
+}
+
+.color-white {
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+}
