@@ -7,7 +7,7 @@ const Cabecalho = (props) => {
     return (
         <div className='cabecalho'>
             <h1>Nexa Frontent Test</h1>
-            <h3>Web, 1x</h3>
+            <h2>Web, 1x</h2>
             <div className='links-cabecalho'>
                 <a href='#'>
                     <img src={imagemIcone1} className='icone1'/>
