@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,500,600,700,800,900|Roboto:400,700&display=swap');
+:root {
+    --cor-titulos-cabecalho: #554d56;
+    --cor-titulo-sessao: #979197;
+    --cor-info-paleta-cores: #979197;
+    --cor-titulo-text-style: #554d56;
+    --cor-subtitulo-text-style: #554d56;
+    --cor-detalhe-text-style: #979197;
+    --cor-contador-favoritos: #ee6723;
+    --font-family-titulos: Roboto Slab, Roboto, Helvetica, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    /* padding: 8rem 7rem; */
+    padding-top: 8rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: Roboto, Helvetica, sans-serif;
+}
+
+.titulo-sessao {
+    color: var(--cor-titulo-sessao);
+    font-family: var(--font-family-titulos);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 3rem 0;
+}
+
+@media (max-width: 1120px) {
+    body {
+        padding: 5rem 2rem;
+    }
+}
+
+@media (max-width: 560px) {
+    body {
+        padding: 4rem 1rem;
+    }
+    .titulo-sessao {
+        margin: 1rem 0;
+    }
 }
