@@ -1,5 +1,5 @@
 import React from 'react'
-import './TextStyleCatalog.css'
+import './style/TextStyleCatalog.css'
 
 const TextStyleCatalog = (props) => {
     return (

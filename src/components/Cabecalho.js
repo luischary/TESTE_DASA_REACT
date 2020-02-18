@@ -1,5 +1,5 @@
 import React from 'react'
-import './Cabecalho.css'
+import './style/Cabecalho.css'
 import imagemIcone1 from '../img/icTwitter.svg'
 import imagemIcone2 from '../img/icFacebook.svg'
 

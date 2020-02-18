@@ -1,5 +1,5 @@
 import React from 'react'
-import './TextStyleItem.css'
+import './style/TextStyleItem.css'
 
 const TextStyleItem = (props) => {
     return (

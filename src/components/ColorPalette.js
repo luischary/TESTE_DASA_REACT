@@ -1,5 +1,5 @@
 import React from 'react'
-import './ColorPalette.css'
+import './style/ColorPalette.css'
 import InfoColors from '../info/InfoColors'
 import ColorElement from './ColorElement'
 

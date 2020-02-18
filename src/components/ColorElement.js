@@ -1,5 +1,5 @@
 import React from 'react'
-import './ColorElement.css'
+import './style/ColorElement.css'
 
 const ColorElement = (props) =>{
     return (
