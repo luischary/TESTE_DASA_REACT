@@ -9,11 +9,11 @@ const Cabecalho = (props) => {
             <h1>Nexa Frontent Test</h1>
             <h2>Web, 1x</h2>
             <div className='links-cabecalho'>
-                <a href='#'>
-                    <img src={imagemIcone1} className='icone1'/>
+                <a href='http://google.com.br'>
+                    <img src={imagemIcone1} className='icone1' alt='Icone compartilhar no Twitter'/>
                 </a>
-                <a href='#'>
-                    <img src={imagemIcone2} className='icone2' />
+                <a href='http://google.com.br'>
+                    <img src={imagemIcone2} className='icone2' alt='Icone compartilhar no Facebook'/>
                 </a>
             </div>
         </div>

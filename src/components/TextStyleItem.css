@@ -1,0 +1,22 @@
+.text-style-titulo {
+    font-size: 2.1rem;
+    font-weight: 900;
+    color: var(--cor-titulo-text-style);
+}
+
+.text-style-subtitulo {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    color: var(--cor-subtitulo-text-style);
+}
+
+.text-style-detalhe {
+    color: var(--cor-detalhe-text-style);
+}
+
+@media (max-width: 560px) {
+    .text-style-subtitulo,
+    .text-style-detalhe {
+        display: none;
+    }
+}
