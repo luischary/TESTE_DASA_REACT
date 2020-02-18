@@ -4,6 +4,7 @@ import ColorPalette from './ColorPalette'
 import TituloSessao from './TituloSessao'
 import TextStyleCatalog from './TextStyleCatalog'
 import TextStyleItem from './TextStyleItem'
+import WebTest from './WebTest'
 
 const TesteDasa = (props) => (
     <React.Fragment>
@@ -18,15 +19,16 @@ const TesteDasa = (props) => (
         </TextStyleCatalog>
 
         <TituloSessao texto='Designs'/>
+        <WebTest>
+            
+        </WebTest>
         
     </React.Fragment>
 )
-
-    // <TextStyleCatalog>
-    //     <TextStyleItem />
-    // </TextStyleCatalog>
-
-    // <Designs>
-    //     <DesignItem />
-    // </Designs>
+        
+        //     <PainelImagens>
+        //         <ImagemPainel srcImagem='../img/imagem1.png' />
+        // <ImagemPainel srcImagem='../img/imagem2.png' />
+        // <ImagemPainel srcImagem='../img/imagem3.png' />  
+        //     </PainelImagens>  
 export default TesteDasa
