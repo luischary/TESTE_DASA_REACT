@@ -1,23 +1,41 @@
-import React from 'react'
+import React , {Component} from 'react'
 import './style/WebTest.css'
 import imagemBotao from '../img/icCollapseSection.svg'
 
-const WebTest = (props) =>{
-    function clickCollapse(e){
-        console.log('Clicou')
+export default class WebTest extends Component{
+
+    
+
+    constructor(props){
+        super(props)
+
+        this.clickCollapse = this.clickCollapse.bind(this)
+        this.state = {
+            visivel: true,
+        }
     }
 
-    return (
-        <React.Fragment>
-            <div className='web-test'>
-                <button onClick={clickCollapse}>
-                    <img src={imagemBotao} alt='Botao Collapse'/>
-                </button>
-                <h4>Web Test</h4>
-            </div>
-            {props.children}
-        </React.Fragment>
-    )
-}
+    clickCollapse = function (e){
+        let novoVisivel = !this.state.visivel
+        this.setState({visivel: novoVisivel})
+    }
 
-export default WebTest
+    render(){
+        const {children} = this.props
+        const {visivel} = this.state
+
+        return(
+            <React.Fragment>
+                <div className='web-test'>
+                    <button onClick={this.clickCollapse}>
+                        <img src={imagemBotao} alt='Botao Collapse' />
+                    </button>
+                    <h4>Web Test</h4>
+                </div>
+                <div id="web-test-children">
+                    {visivel ? children: null}
+                </div>
+            </React.Fragment>
+        )
+    }
+}
