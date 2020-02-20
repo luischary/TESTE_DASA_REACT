@@ -1,0 +1,20 @@
+.footer-imagem {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+.contador {
+    display: flex;
+    color: var(--cor-contador-favoritos);
+    font-size: 0.9rem;
+}
+
+.contador a {
+    color: var(--cor-contador-favoritos);
+}
+
+.contagem-favorito {
+    margin-right: 0.3rem;
+}

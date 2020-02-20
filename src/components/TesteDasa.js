@@ -23,9 +23,9 @@ const TesteDasa = (props) => (
         <TituloSessao texto='Designs'/>
         <WebTest>
             <PainelImagens>
-                <ImagemPainel nomeImagem='imagem1.png' />
-                <ImagemPainel nomeImagem='imagem2.png' />
-                <ImagemPainel nomeImagem='imagem3.png' />  
+                <ImagemPainel nomeImagem='imagem1.png' legenda='Dreamshare_desktop'/>
+                <ImagemPainel nomeImagem='imagem2.png' legenda='Tablet Portrait'/>
+                <ImagemPainel nomeImagem='imagem3.png' legenda='Mobile Portrait'/>  
             </PainelImagens>
         </WebTest>
         
