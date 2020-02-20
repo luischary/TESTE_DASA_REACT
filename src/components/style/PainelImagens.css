@@ -1,0 +1,9 @@
+.painel-imagens {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.painel-imagens img {
+    max-width: 100%;
+}
