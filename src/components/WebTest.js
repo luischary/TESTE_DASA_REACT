@@ -1,6 +1,6 @@
 import React , {Component} from 'react'
 import './style/WebTest.css'
-import imagemBotao from '../img/icCollapseSection.svg'
+import enderecoImagemBotao from '../img/icCollapseSection.svg'
 
 export default class WebTest extends Component{
 
@@ -10,13 +10,25 @@ export default class WebTest extends Component{
         super(props)
 
         this.clickCollapse = this.clickCollapse.bind(this)
+        this.imagemBotao = React.createRef();
         this.state = {
             visivel: true,
         }
     }
 
+    rotacionaImagem = function(){
+        if (this.state.visivel) {
+            this.imagemBotao.current.setAttribute('style', 'transform:rotate(270deg)')
+        } else {
+            this.imagemBotao.current.setAttribute('style', 'transform: rotate(0deg)')
+        }
+    }
+
     clickCollapse = function (e){
         let novoVisivel = !this.state.visivel
+
+        this.rotacionaImagem(novoVisivel)
+        
         this.setState({visivel: novoVisivel})
     }
 
@@ -28,7 +40,7 @@ export default class WebTest extends Component{
             <React.Fragment>
                 <div className='web-test'>
                     <button onClick={this.clickCollapse}>
-                        <img src={imagemBotao} alt='Botao Collapse' />
+                        <img src={enderecoImagemBotao} alt='Botao Collapse' ref={this.imagemBotao}/>
                     </button>
                     <h4>Web Test</h4>
                 </div>
