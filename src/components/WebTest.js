@@ -1,6 +1,7 @@
 import React , {Component} from 'react'
 import './style/WebTest.css'
 import enderecoImagemBotao from '../img/icCollapseSection.svg'
+import TituloSessao from './TituloSessao'
 
 export default class WebTest extends Component{
 
@@ -38,6 +39,7 @@ export default class WebTest extends Component{
 
         return(
             <React.Fragment>
+                <TituloSessao texto={this.props.textoTitulo} />
                 <div className='web-test'>
                     <button onClick={this.clickCollapse}>
                         <img src={enderecoImagemBotao} alt='Botao Collapse' ref={this.imagemBotao}/>

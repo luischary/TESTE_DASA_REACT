@@ -20,9 +20,9 @@ a {
     outline: none;
 }
 
-body {
+#root {
     /* padding: 8rem 7rem; */
-    padding-top: 8rem;
+    padding: 8rem 0 0 0;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -35,17 +35,25 @@ body {
     font-family: var(--font-family-titulos);
     font-size: 1.1rem;
     font-weight: 700;
-    margin: 7rem 0 0 0;
+    margin: 5rem 0 2rem 0;
+}
+
+
+
+.principal {
+    padding: 2rem 0 0 0;
+    display: block;
+    width: 1040px;
 }
 
 @media (max-width: 1120px) {
-    body {
+    #root {
         padding: 5rem 2rem;
     }
 }
 
 @media (max-width: 560px) {
-    body {
+    #root {
         padding: 4rem 1rem;
     }
     .titulo-sessao {

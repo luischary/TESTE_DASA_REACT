@@ -1,6 +1,4 @@
-.paleta-cores {
-    padding: 2rem 0 0 0;
-}
+
 
 .elementos-paleta-cores {
     margin-bottom: 2rem;
@@ -35,17 +33,9 @@
     margin-right: 1rem;
 }
 
-@media (max-width: 1440px) {
-    .paleta-cores {
-        width: 1040px;
-    }
-}
+
 
 @media (max-width: 560px) {
-    .paleta-cores {
-        padding: 1rem 0;
-        margin: 2rem 0;
-    }
     .elementos-paleta {
         width: 505px;
     }

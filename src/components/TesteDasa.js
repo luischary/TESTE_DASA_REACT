@@ -12,22 +12,21 @@ const TesteDasa = (props) => (
     <React.Fragment>
         <Cabecalho />
 
-        <TituloSessao texto='Color palette' />
-        < ColorPalette />
+        <div class='principal'>
+            < ColorPalette textoTitulo='Color pallete' />
 
-        <TituloSessao texto='Text style catalog'/>
-        <TextStyleCatalog>
-            <TextStyleItem title='Text Style' fontInfo='Montserrat, Bold, 52px' detail='Center'/>
-        </TextStyleCatalog>
+            <TextStyleCatalog textoTitulo='Text style catalog'>
+                <TextStyleItem title='Text Style' fontInfo='Montserrat, Bold, 52px' detail='Center'/>
+            </TextStyleCatalog>
 
-        <TituloSessao texto='Designs'/>
-        <WebTest>
-            <PainelImagens>
-                <ImagemPainel nomeImagem='imagem1.png' legenda='Dreamshare_desktop'/>
-                <ImagemPainel nomeImagem='imagem2.png' legenda='Tablet Portrait'/>
-                <ImagemPainel nomeImagem='imagem3.png' legenda='Mobile Portrait'/>  
-            </PainelImagens>
-        </WebTest>
+            <WebTest textoTitulo='Designs'>
+                <PainelImagens>
+                    <ImagemPainel nomeImagem='imagem1.png' legenda='Dreamshare_desktop'/>
+                    <ImagemPainel nomeImagem='imagem2.png' legenda='Tablet Portrait'/>
+                    <ImagemPainel nomeImagem='imagem3.png' legenda='Mobile Portrait'/>  
+                </PainelImagens>
+            </WebTest>
+        </div>
         
     </React.Fragment>
 )
