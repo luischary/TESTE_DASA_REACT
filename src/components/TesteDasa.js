@@ -1,7 +1,6 @@
 import React from 'react'
 import Cabecalho from './Cabecalho'
 import ColorPalette from './ColorPalette'
-import TituloSessao from './TituloSessao'
 import TextStyleCatalog from './TextStyleCatalog'
 import TextStyleItem from './TextStyleItem'
 import WebTest from './WebTest'

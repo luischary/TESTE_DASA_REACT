@@ -11,8 +11,11 @@
     font-size: 0.9rem;
 }
 
-.contador a {
+.contador button {
     color: var(--cor-contador-favoritos);
+    background-color: transparent;
+    border: none;
+    outline: none;
 }
 
 .contagem-favorito {

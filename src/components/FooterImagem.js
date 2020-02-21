@@ -17,6 +17,9 @@ export default class FooterImagem extends Component{
     clickCoracao(e){
         e.preventDefault()
         const novaContagem = this.state.contagem + 1
+        if(this.props.atualizaContagem !== null){
+            this.props.atualizaContagem(novaContagem)
+        }
 
         this.setState({contagem: novaContagem, clicou:true})
     }
@@ -30,9 +33,9 @@ export default class FooterImagem extends Component{
                 <span>{this.props.legenda}</span>
                 <div className='contador'>
                     <span className='contagem-favorito'>{contagem}</span>
-                    <a href="#" className='coracao' onClick={this.clickCoracao}>
+                    <button className='coracao' onClick={this.clickCoracao}>
                         {clicou ? <i className='fas fa-heart'></i> : <i className='far fa-heart'></i> }
-                    </a>
+                    </button>
                 </div>
             </div>
         )
