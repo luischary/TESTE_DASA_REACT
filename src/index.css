@@ -30,16 +30,6 @@ a {
     font-family: Roboto, Helvetica, sans-serif;
 }
 
-.titulo-sessao {
-    color: var(--cor-titulo-sessao);
-    font-family: var(--font-family-titulos);
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin: 5rem 0 2rem 0;
-}
-
-
-
 .principal {
     padding: 2rem 0 0 0;
     display: block;
@@ -67,8 +57,5 @@ a {
 @media (max-width: 560px) {
     #root {
         padding: 4rem 1rem;
-    }
-    .titulo-sessao {
-        margin: 4rem 0 2rem 0;
     }
 }

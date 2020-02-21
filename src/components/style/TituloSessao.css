@@ -1,0 +1,14 @@
+
+.titulo-sessao {
+    color: var(--cor-titulo-sessao);
+    font-family: var(--font-family-titulos);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 5rem 0 2rem 0;
+}
+
+@media (max-width: 560px) {
+    .titulo-sessao {
+        margin: 4rem 0 2rem 0;
+    }
+}
