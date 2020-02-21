@@ -1,6 +1,7 @@
 import React from 'react'
 import FooterImagem from './FooterImagem'
 import './style/ImagemPainel.css'
+import ModalImage from 'react-modal-image'
 
 export default class ImagemPainel extends React.Component {
     state={
@@ -34,17 +35,21 @@ export default class ImagemPainel extends React.Component {
         return (
             <React.Fragment>
                 <div className='imagem-painel'>
-                    <img src={enderecoImagem} alt={"Imagem"} key={this.props.srcImg} onClick={this.exibeModal} />
+                    <ModalImage small={enderecoImagem} large={enderecoImagem} alt={this.props.legenda}/>
                     <FooterImagem legenda={this.props.legenda} inicioContagem={contagemAtual} />
                 </div>
-                <div id='janela-modal' ref={this.modalRef} onClick={this.closeModal}>
-                    <span id='fecharModal' onClick={this.closeModal}>&times;</span>
-                    <div className='legenda-imagem-modal'>{this.props.legenda}</div>
-                    <img className='imagem-modal' src={enderecoImagem} />
-                </div>
+                
             </React.Fragment>
         )
     }
 
 }
+
+{/* <img src={enderecoImagem} alt={"Imagem"} key={this.props.srcImg} onClick={this.exibeModal} /> */}
+
+// <div id='janela-modal' ref={this.modalRef} onClick={this.closeModal}>
+//     <span id='fecharModal' onClick={this.closeModal}>&times;</span>
+//     <div className='legenda-imagem-modal'>{this.props.legenda}</div>
+//     <img className='imagem-modal' src={enderecoImagem} />
+// </div>
 
