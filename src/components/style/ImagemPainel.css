@@ -1,4 +1,19 @@
 .imagem-painel {
     width: 31%;
-    height: auto;
+}
+
+@media (max-width: 720px){
+    .imagem-painel{
+        width: 31.5%;
+    }
+}
+
+@media (max-width: 560px){
+    .imagem-painel{
+        width: 33%;
+    }
+
+    div .footer-imagem{
+        display: none;
+    }
 }

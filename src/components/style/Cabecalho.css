@@ -32,6 +32,12 @@
     margin: 0 0.5rem;
 }
 
+@media (min-width: 1800px) {
+    .cabecalho {
+        width: 1400px;
+    }
+}
+
 @media (max-width: 720px) {
     .cabecalho h1 {
         font-size: 2.2rem;
