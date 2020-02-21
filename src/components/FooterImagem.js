@@ -4,7 +4,7 @@ import './style/FooterImagem.css'
 export default class FooterImagem extends Component{
 
     state={
-        contagem: 1,
+        contagem: this.props.inicioContagem,
         clicou: false
     }
 
@@ -27,11 +27,11 @@ export default class FooterImagem extends Component{
 
         return(
             <div className='footer-imagem'>
-                <spam>{this.props.legenda}</spam>
+                <span>{this.props.legenda}</span>
                 <div className='contador'>
-                    <spam className='contagem-favorito'>{contagem}</spam>
-                    <a href="#" class='coracao' onClick={this.clickCoracao}>
-                        {clicou ? <i class='fas fa-heart'></i> : <i class='far fa-heart'></i> }
+                    <span className='contagem-favorito'>{contagem}</span>
+                    <a href="#" className='coracao' onClick={this.clickCoracao}>
+                        {clicou ? <i className='fas fa-heart'></i> : <i className='far fa-heart'></i> }
                     </a>
                 </div>
             </div>

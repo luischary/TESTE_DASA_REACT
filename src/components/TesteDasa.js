@@ -12,7 +12,7 @@ const TesteDasa = (props) => (
     <React.Fragment>
         <Cabecalho />
 
-        <div class='principal'>
+        <div className='principal'>
             < ColorPalette textoTitulo='Color pallete' />
 
             <TextStyleCatalog textoTitulo='Text style catalog'>
